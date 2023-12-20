@@ -370,7 +370,7 @@ ul.row {
 }
 
 
-[class*='col-'] {
+.section-about-us [class*='col-'] {
   margin: 1rem;
 }
 
