@@ -370,7 +370,7 @@ ul.row {
 }
 
 
-.section-about-us [class*='col-'] {
+[class*='col-'] {
   margin: 1rem;
 }
 
@@ -551,10 +551,7 @@ ul.row {
 .section-latest-news .row {
   flex-direction: row-reverse;
 }
-/* Section ABOUT US  ============================= */
-[class*='col-'] {
-  align-self: center;
-}
+
 /* Section SERVICES ============================= */
 .section-services .row {
   flex-wrap: wrap;
@@ -563,7 +560,6 @@ ul.row {
 
 /* Card (all styles)
    ============================= */
-
 .card-category {
   color: var(--color-primary);
 }
