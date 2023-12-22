@@ -3,10 +3,11 @@
   --box1-height: calc(var(--box1-width) * 0.5);
   --box2-width: calc(var(--box1-width) * 1.2);
   --box2-height: calc(var(--box2-width) * 0.7);
-  --box3-width: calc(var(--box1-width)* 3);
+  --box3-width: calc(var(--box1-width)* 3.5);
+  --box3-height: calc(var(--box3-width) * 0.55);
   --box4-width: calc(var(--box1-width) * 1.2);
   --box4-height: calc(var(--box2-width) * 0.7);
-  --box5-width: 100px;
+  --box5-width: var(--box1-width);
   --box5-height: calc(var(--box1-width) * 0.5);
 
   --clr-green: #50c650;
