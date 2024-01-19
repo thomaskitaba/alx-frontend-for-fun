@@ -1,0 +1,29 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h2 {
+  font-size: 3rem;
+}
+a:active {
+
+}
+
+a {
+  color: rgb(155, 4, 4);
+  text-decoration: none;
+  position: relative;
+}
+a::before {
+  content: '';
+  position: absolute;
+  background-color: rgb(155, 4, 4);
+  width: 0%;
+  height: 10px;
+  top: 100%;
+  transition: all 200ms ease-in;
+}
+a:hover::before {
+  width: 100%;
+}
