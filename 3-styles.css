@@ -17,10 +17,11 @@ body, html {
   position: relative;
   left: 20px;
   gap: 20px;
+  top: 40px;
 }
 
 .menu-open {
-  /* display: none; */
+  display: none;
 }
 
 .menu-open-button {
@@ -91,4 +92,21 @@ body, html {
 
 .menu-open:checked + .menu-open-button .menu-line-1 {
   transform: rotate(-45deg);
+}
+@media (min-width: 768px) {
+  .menu {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    left: 40px;
+    top: 40px;
+    border: 2px solid b
+  }
+  .menu-open {
+    display: none;
+  }
+.menu-open-button {
+  display: none;
+}
 }
