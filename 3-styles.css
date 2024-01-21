@@ -1,0 +1,51 @@
+:root {
+  --bg-clr-darkred: rgb(175, 8, 8);
+  --bg-clr-white: white;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  left: 20px;
+}
+.menu-open {
+  display: none;
+}
+.menu-open-button {
+
+  position: relative;
+  background-color: var(--bg-clr-darkred);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.menu-line {
+
+  position: absolute;
+  left: 100px;
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  z-index: 100;
+}
+.menu {
+  display: flex;
+  gap: 20px;
+}
+.menu-item {
+  position: relative;
+  margin-left: 0px;
+  background-color: var(--bg-clr-darkred);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.fa {
+  position:absolute;
+  color: white;
+  left: 40px;
+  top: 40px;
+  size: 1.5rem;
+}
