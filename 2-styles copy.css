@@ -1,0 +1,62 @@
+/* 2-styles.css */
+
+/* Resetting some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styles for the toggle container */
+.toggle {
+  display: inline-block;
+}
+
+/* Hide the default checkbox */
+.toggle-cb {
+  display: none;
+}
+
+/* Style for the label, which acts as the visible toggle switch */
+.toggle-label {
+  position: relative;
+  display: block;
+  width: 60px; /* Adjust the width of the toggle switch as needed */
+  height: 30px; /* Adjust the height of the toggle switch as needed */
+  background-color: #ccc; /* Background color when the toggle switch is off */
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer;
+}
+
+/* Styles for the inner part of the toggle switch */
+.toggle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%; /* Width when the toggle switch is on */
+  height: 100%;
+  background-color: #4CAF50; /* Background color when the toggle switch is on */
+  border-radius: 15px; /* Rounded corners */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styles for the switch handle */
+.toggle-switch {
+  position: absolute;
+  top: 5px; /* Adjust the vertical position of the switch handle */
+  left: 5px; /* Adjust the horizontal position of the switch handle */
+  width: 20px; /* Adjust the width of the switch handle */
+  height: 20px; /* Adjust the height of the switch handle */
+  background-color: #fff; /* Color of the switch handle */
+  border-radius: 50%; /* Circular shape */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Drop shadow for depth */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Styling for the checked state (toggle switch is on) */
+.toggle-cb:checked + .toggle-label .toggle-inner {
+  width: 100%;
+}
+
+.toggle-cb:checked + .toggle-label .toggle-switch {
+  left: calc(100% - 25px); /* Position the switch handle to the right when the toggle switch is on */
+}
