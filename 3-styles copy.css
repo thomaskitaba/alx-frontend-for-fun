@@ -1,14 +1,9 @@
 :root {
   --bg-clr-darkred: rgb(175, 8, 8);
   --bg-clr-white: white;
+
   --size-button: 100px;
 }
-
-body, html {
-  margin: 0;
-  padding: 0;
-}
-
 .menu {
   display: flex;
   flex-direction: column;
@@ -16,14 +11,12 @@ body, html {
   justify-content: center;
   position: relative;
   left: 20px;
-  gap: 20px;
 }
-
 .menu-open {
-  /* display: none; */
+  display: none;
 }
-
 .menu-open-button {
+
   position: relative;
   background-color: var(--bg-clr-darkred);
   width: var(--size-button);
@@ -33,26 +26,28 @@ body, html {
 }
 
 .menu-line {
+
   position: absolute;
   width: calc(var(--size-button) * 0.5);
   height: 7px;
   background-color: white;
   z-index: 100;
   left: 25px;
-}
 
+}
 .menu-line-1 {
   top: 30px;
 }
-
 .menu-line-2 {
   top: 45px;
 }
-
 .menu-line-3 {
   top: 60px;
 }
-
+.menu {
+  display: flex;
+  gap: 20px;
+}
 .menu-item {
   position: relative;
   margin-left: 0px;
@@ -60,35 +55,19 @@ body, html {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  display: none;
 }
-
 .fa {
-  position: absolute;
+  position:absolute;
   color: white;
   left: 40px;
   top: 40px;
-  font-size: 1.5rem;
+  size: 1.5rem;
   width: 3rem;
   height: 3rem;
 }
-
-
-.menu-open:checked ~ .menu-item {
-  display: block;
-}
-.menu-open:checked + .menu-open-button .menu-line-2 {
+.menu-item {
   display: none;
 }
-.menu-open:checked + .menu-open-button .menu-line-1,
-.menu-open:checked + .menu-open-button .menu-line-3 {
-  top: 45px;
-
-}
-.menu-open:checked + .menu-open-button .menu-line-3 {
-  transform: rotate(45deg);
-}
-
-.menu-open:checked + .menu-open-button .menu-line-1 {
-  transform: rotate(-45deg);
+.menu-open:checked + .menu-open-button [class='menu-item'] {
+  display: block;
 }
