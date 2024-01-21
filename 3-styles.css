@@ -1,6 +1,8 @@
 :root {
   --bg-clr-darkred: rgb(175, 8, 8);
   --bg-clr-white: white;
+
+  --size-button: 100px;
 }
 .menu {
   display: flex;
@@ -11,24 +13,36 @@
   left: 20px;
 }
 .menu-open {
-  display: none;
+  /* display: none; */
 }
 .menu-open-button {
 
   position: relative;
   background-color: var(--bg-clr-darkred);
-  width: 100px;
-  height: 100px;
+  width: var(--size-button);
+  height: var(--size-button);
   border-radius: 50%;
+  transition: all 0.5s ease-in;
 }
+
 .menu-line {
 
   position: absolute;
-  left: 100px;
-  width: 200px;
-  height: 200px;
-  background-color: blue;
+  width: calc(var(--size-button) * 0.5);
+  height: 7px;
+  background-color: white;
   z-index: 100;
+  left: 25px;
+
+}
+.menu-line-1 {
+  top: 30px;
+}
+.menu-line-2 {
+  top: 45px;
+}
+.menu-line-3 {
+  top: 60px;
 }
 .menu {
   display: flex;
@@ -48,4 +62,12 @@
   left: 40px;
   top: 40px;
   size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+}
+.menu-item {
+  display: none;
+}
+.menu-open:checked + .menu-open-button .menu-item {
+  display: block;
 }
