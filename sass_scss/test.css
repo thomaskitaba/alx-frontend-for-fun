@@ -1,5 +1,8 @@
-/* Debug */
-@debug "Hello, world!";
+/*nested sass*/
 body {
-  color: red;
-}
+  margin: 0px;
+  padding: 0px; }
+  body p {
+    margin: 10px; }
+
+/*# sourceMappingURL=test.css.map */
