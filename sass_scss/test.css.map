@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAc;AAEZ,eAAW;EACP,KAAK,EAAE,OAAO",
+"sources": ["0-debug_log.scss"],
+"names": [],
+"file": "test.css"
+}
