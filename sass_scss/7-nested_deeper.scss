@@ -1,0 +1,13 @@
+/* font-size */
+
+$size-small: 12px;
+$size-mid: 14px;
+$size-big: 16px;
+
+body {
+  font-size: $size-mid;
+  h1 {
+    font-size: $size-big; }
+    h1.smaller {
+      font-size: $size-small; }
+}

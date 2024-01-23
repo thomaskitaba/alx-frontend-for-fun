@@ -1,0 +1,13 @@
+/* success and waring */
+$fnt-size: 12px;
+$txt-clr-1: #FF0000;
+$txt-clr-2: #00FF00;
+
+.info, .success, .warning {
+  font-size: $fnt-size; }
+.success {
+  color: $txt-clr-2;
+}
+.warning {
+  color: $txt-clr-1;
+}

@@ -1,0 +1,11 @@
+/* margin */
+$size-small: 10px;
+$size-mid: 15px;
+body {
+  margin-left: $size-small;
+  margin-right: $size-small;
+  div {
+    margin-left: $size-mid;
+    margin-right: $size-mid;
+  }
+}

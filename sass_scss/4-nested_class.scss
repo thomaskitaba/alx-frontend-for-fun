@@ -2,7 +2,8 @@
 $clr-1: #FF0000;
 $clr-2: #3D3D3D;
 body {
-  color: #3D3D3D;
+  color: $clr-1;
   .red {
-    color: #FF0000; }
+    color: $clr-2;
+  }
 }
