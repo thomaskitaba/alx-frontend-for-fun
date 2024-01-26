@@ -1,5 +1,4 @@
 /* My style */
-$msg: "Hello World";
 body {
-@debug $msg;
+@debug "Hello World";
 }
