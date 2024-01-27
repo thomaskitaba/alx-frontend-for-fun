@@ -1,0 +1,11 @@
+/* media quesry 0 */
+$size-1: 20px;
+$size-2: 14px;
+h1 {
+  font-size: $size-1;
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: $size-2;
+  }
+}
