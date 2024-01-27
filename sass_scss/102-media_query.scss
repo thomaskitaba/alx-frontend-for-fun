@@ -6,21 +6,18 @@ $size-small: 14px;
 $clr-1:  #1D1D1D;
 
 h1 {
-  font-size: 20px;
+  font-size: $size-extra-large;
 
-  @media screen and (max-width: 960px) {
-    font-size: 18px;
-  }
-
-  @media screen and (max-width: 640px) {
-    font-size: 16px;
-  }
-
-  @media screen and (max-width: 320px) {
-    font-size: 14px;
-
+@media screen and (max-width: 960px) {
+    font-size: $size-large;
+}
+@media screen and (max-width: 640px) {
+    font-size: $size-mid;
+}
+@media screen and (max-width: 320px) {
+    font-size: $size-small;
     &.small {
-      color: #1d1d1d;
+      color:$clr-1;
     }
   }
 }
