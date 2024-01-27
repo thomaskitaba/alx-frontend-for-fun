@@ -1,10 +1,8 @@
 /* button */
-$clr-button-1: #FF0000;
-$clr-button-2: #00FF00;
 button {
   color: #FF0000;
 
   &:hover {
-    color: #00FF00;
+      color: #00FF00;
   }
 }
