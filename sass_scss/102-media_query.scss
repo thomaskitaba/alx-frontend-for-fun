@@ -4,6 +4,7 @@ $size-large: 18px;
 $size-mid: 16px;
 $size-small: 14px;
 $clr-1:  #1D1D1D;
+
 h1 {
   font-size: $size-extra-large;
 }
@@ -20,7 +21,8 @@ h1 {
 @media screen and (max-width: 320px) {
   h1 {
     font-size: $size-small;
-
+  }
+  h1 {
     &.small {
       color:$clr-1;
     }
