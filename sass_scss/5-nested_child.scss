@@ -3,6 +3,8 @@ $clr-1: #3D3D3D;
 $clr-2: #FF0000;
 body {
   color: $clr-1;
+}
+body {
   > .red {
     color: $clr-2; }
 }
