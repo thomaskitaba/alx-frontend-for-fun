@@ -1,0 +1,28 @@
+/* media query */
+$size-extra-large: 20px;
+$size-large: 18px;
+$size-mid: 16px;
+$size-small: 14px;
+$clr-1:  #1D1D1D;
+h1 {
+  font-size: $size-extra-large;
+}
+@media screen and (max-width: 960px) {
+  h1 {
+    font-size: $size-large;
+  }
+}
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: $size-mid;
+  }
+}
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: $size-small;
+
+    .small {
+      color:$clr-1;
+    }
+  }
+}
