@@ -1,13 +1,13 @@
 /* margin */
 
-@mixin margin($size: 10px) {
+@mixin setMargin($size: 10px) {
   margin-left: $size;
   margin-right: $size;
 }
-$size-mid: 15px;
+
 body {
-  @include margin;
+  @include setMargin;
 }
 div {
-    @include margin($size: 15px);
+    @include setMargin($size: 15px);
 }
