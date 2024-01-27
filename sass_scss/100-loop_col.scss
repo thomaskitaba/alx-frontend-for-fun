@@ -1,0 +1,7 @@
+/* class with diffrent width */
+$n: 4;
+@for $i from 1 through $n {
+  .col-#{$i} {
+    width: #{(100 / $i)#{'%'}};
+  }
+}
