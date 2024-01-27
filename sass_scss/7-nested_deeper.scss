@@ -8,6 +8,6 @@ body {
   font-size: $size-mid;
   h1 {
     font-size: $size-big; }
-    h1.smaller {
+    &.smaller {
       font-size: $size-small; }
 }
