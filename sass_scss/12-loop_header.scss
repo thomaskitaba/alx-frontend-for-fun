@@ -1,0 +1,7 @@
+/* using @for */
+$n: 5;
+@for $i from 1 through $n {
+  h#{$i} {
+    font-size: #{$i}px;
+  }
+}
