@@ -3,11 +3,13 @@ $fnt-size: 12px;
 $txt-clr-1: #FF0000;
 $txt-clr-2: #00FF00;
 
-.info, .success, .warning {
+.info{
   font-size: $fnt-size; }
 .success {
+  @extend .info;
   color: $txt-clr-2;
 }
 .warning {
+  @extend .info;
   color: $txt-clr-1;
 }
