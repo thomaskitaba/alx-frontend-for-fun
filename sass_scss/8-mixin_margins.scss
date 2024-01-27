@@ -1,11 +1,13 @@
 /* margin */
-$size-small: 10px;
+
+@mixin margin($size: 10px) {
+  margin-left: $size;
+  margin-right: $size;
+}
 $size-mid: 15px;
 body {
-  margin-left: $size-small;
-  margin-right: $size-small;
+  @include margin;
 }
 div {
-    margin-left: $size-mid;
-    margin-right: $size-mid;
-  }
+    @include margin($size: 15px);
+}
