@@ -1,8 +1,7 @@
-/*nested sass*/
-body {
-  margin: 0px;
-  padding: 0px; }
-  body p {
-    margin: 10px; }
+/* button hover */
+button {
+  color: #FF0000; }
+  button:hover {
+    color: #00FF00; }
 
 /*# sourceMappingURL=test.css.map */
