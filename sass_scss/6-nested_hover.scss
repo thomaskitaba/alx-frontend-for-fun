@@ -1,8 +1,10 @@
-// button hover on mouseover
+/* button hover on mouseover */
+$clr-1: #FF0000;
+$clr-2: #00FF00;
 button {
-  color: #FF0000;
+  color: $clr1;
 
   &:hover {
-      color: #00FF00;
+      color: $clr-2;
   }
 }
