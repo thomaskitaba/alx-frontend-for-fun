@@ -1,8 +1,8 @@
-/* button hover */
+/* button hover on mouseover*/
 button {
   color: #FF0000;
 
   &:hover {
-    color: 00FF00;
+      color: #00FF00;
   }
 }
